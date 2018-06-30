@@ -49,7 +49,7 @@ kubectl get pods
 minikube dashboard
 ```
 
-7. Start the Minikube service which opens the deployed application in a browser
+7. Start the service using Minikube which opens the deployed application in a browser
 ```
 minikube service kubernetes-nodejs
 ```
