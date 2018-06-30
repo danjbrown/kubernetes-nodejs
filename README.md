@@ -30,11 +30,11 @@ Note: you can run the Docker image manually by going into the application direct
 docker run -p 49160:8080 -d kubernetes-nodejs
 ```
 
-4. Create the deployment and load balancer on Kubernetes using the configuration files in the /kubernetes directory. As you can see in these files port 8080 on which the Node.js app runs is mapped to the external port 30001 using the LoadBalancer service.
+4. Create the deployment and load balancer service on Kubernetes using the configuration files in the /kubernetes directory. As you can see in these files port 8080 on which the Node.js app runs is mapped to the external port 30001 using the LoadBalancer service.
 ```
 kubectl apply -f kubernetes
 ```
-It is also possible create the deployment and load balancer service on the command line
+It is also possible create the deployment and load balancer service manually on the command line
 ```
 kubectl run kubernetes-nodejs --image=kubernetes-nodejs:v1 --port=8080 --image-pull-policy=Never
 kubectl expose deployment kubernetes-nodejs --type=LoadBalancer
