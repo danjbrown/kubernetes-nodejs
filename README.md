@@ -69,7 +69,7 @@ The changes should be loaded in the browser
 9. Clean up the application
 Delete the Kubernetes deployment and service, and Docker images
 ```
-kubectl delete -f kuebernetes/
+kubectl delete -f kubernetes/
 docker rmi kubernetes-nodejs:v1 kubernetes-nodejs:v2 -f
 minikube stop
 eval $(minikube docker-env -u)
