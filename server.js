@@ -6,7 +6,7 @@ const express = require('express');
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
-// App
+// Application
 const app = express();
 app.get('/', (req, res) => {
   res.send('Node.js deployed with Docker and Kubernetes\n');
